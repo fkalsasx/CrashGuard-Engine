@@ -1,63 +1,45 @@
 # CrashGuard Engine
 
-**Windows oyunları için bütünlük taraması, çökme analizi ve güvenli kurtarma merkezi.**  
-**Integrity scanning, crash analysis, and safer recovery for Windows games.**
+**A Windows desktop utility for game integrity checks, crash analysis, and safer recovery.**
 
-CrashGuard Engine; oyun kurulumlarını keşfetmek, dosya bütünlüğünü incelemek, çökme kanıtlarını anlaşılır hâle getirmek ve mod kaynaklı sorunları araştırmak için geliştirilmiş bir Windows masaüstü uygulamasıdır.
+[English](README.md) · [Türkçe](README.tr.md)
 
-## Öne çıkan özellikler
+CrashGuard Engine helps you discover game installations, check file integrity, make crash evidence easier to understand, and investigate mod-related problems.
 
-- Steam, Epic, GOG, Xbox, EA ve Ubisoft kurulumlarını bilinen başlatıcı kayıtlarından keşfeder.
-- Oyun dosyalarını **salt okunur** ve iptal edilebilir biçimde tarar.
-- Windows çökme kayıtlarını, ana EXE bütünlüğünü ve mod eşleşmelerini kanıta göre sıralar.
-- Önem düzeyi, çözüm güveni, risk ve doğrulama planını açıkça gösterir.
-- Değişiklik gerektiren işlemlerden önce kullanıcı onayı ve geri dönüş noktası ister.
-- Sonuç doğrulanmazsa güvenli geri alma yaklaşımını kullanır.
-- Türkçe ve İngilizce arayüz sunar.
-- Resmî Steam kapaklarını doğrular; geçersiz görseller yerine CrashGuard Engine kapağını kullanır.
+## Features
 
-## İndir
+- Discovers installations for Steam, Epic Games, GOG, Xbox, EA, and Ubisoft from known launcher records.
+- Runs read-only, cancellable game-file integrity scans.
+- Ranks Windows crash records, executable integrity results, and mod matches as evidence.
+- Clearly presents severity, confidence, risk, and a verification plan.
+- Requests approval and creates a recovery point before actions that change files.
+- Uses a safe rollback approach when a recovery step cannot be verified.
+- Includes Turkish and English interfaces.
+- Verifies official Steam artwork and falls back to the CrashGuard Engine cover when an image is invalid.
 
-En güncel Windows 10/11 x64 sürümünü [GitHub Releases](https://github.com/fkalsasx/CrashGuard-Engine/releases/latest) sayfasından indirebilirsiniz.
+## Download
 
-1. `CrashGuardEngine-v1.0.0.exe` dosyasını indirin.
-2. Sürüm sayfasındaki SHA-256 değeriyle dosyayı doğrulayın.
-3. EXE dosyasını çalıştırın.
+Download the latest Windows 10/11 x64 build from [GitHub Releases](https://github.com/fkalsasx/CrashGuard-Engine/releases/latest).
 
-Uygulama tek dosyalı ve bağımsızdır; ayrıca .NET kurulumu gerektirmez.
+1. Download <code>CrashGuardEngine-v1.0.0.exe</code>.
+2. Verify the file against the SHA-256 value on the release page.
+3. Run the executable.
 
-## Güvenlik yaklaşımı
+The app is a standalone, single-file build and does not require a separate .NET installation.
 
-CrashGuard Engine, eksik kanıtı kesin sonuç gibi göstermez. Oyun yolları, hash sonuçları ve tanılama kayıtları varsayılan olarak bilgisayarınızda kalır. İnternet araştırması ve destek paketi dışa aktarma işlemleri yalnızca kullanıcı tarafından başlatılır. Güvenlik yazılımınızı kapatmanız önerilmez.
+## Safety and privacy
 
-## Son doğrulama
+CrashGuard does not present missing evidence as a definitive diagnosis. Game paths, hash results, and diagnostic logs stay on your computer by default. Online research and support-package exports are started by you. You should not disable your security software.
 
-23 Eylül 2026 bakım derlemesi:
+## Recorded verification — September 23, 2026
 
-- 154/154 otomatik test başarılı.
-- Release derlemesi 0 hatayla tamamlandı.
-- NuGet taramasında bilinen güvenlik açığı bulunmadı.
-- Arayüz ve paketlenmiş EXE başlangıç testleri kararlı tamamlandı.
+- All 154 automated tests passed.
+- The release build completed with zero errors.
+- The NuGet scan found no known vulnerabilities.
+- UI and packaged executable startup checks completed successfully.
 
-Ayrıntılar için [en güncel sürüm notlarına](https://github.com/fkalsasx/CrashGuard-Engine/releases/latest) bakın.
+See the [latest release notes](https://github.com/fkalsasx/CrashGuard-Engine/releases/latest) for current build details.
 
-## Sorun bildirme
+## Report a problem
 
-Tekrarlanabilir bir sorun bulursanız [Issues](https://github.com/fkalsasx/CrashGuard-Engine/issues) bölümünde oyun adı, uygulanan adımlar, beklenen sonuç ve görülen sonuçla birlikte bildirin. Parola, hesap bilgisi veya kişisel dosya içeriği paylaşmayın.
-
----
-
-## English
-
-CrashGuard Engine is a Windows desktop utility for discovering game installations, checking file integrity, organizing crash evidence, and investigating mod-related problems.
-
-### Highlights
-
-- Discovers installations from major PC game launchers.
-- Performs read-only, cancellable integrity scans.
-- Ranks crash evidence and recovery suggestions by confidence and risk.
-- Requests approval before changes and favors reversible recovery steps.
-- Supports Turkish and English.
-- Ships as a standalone Windows x64 executable; no separate .NET installation is required.
-
-Download the latest build from [GitHub Releases](https://github.com/fkalsasx/CrashGuard-Engine/releases/latest). For reproducible problems, open an [Issue](https://github.com/fkalsasx/CrashGuard-Engine/issues).
+Open an [Issue](https://github.com/fkalsasx/CrashGuard-Engine/issues) with the game name, steps to reproduce, expected result, and observed result. Do not include passwords, account credentials, or personal file contents.
